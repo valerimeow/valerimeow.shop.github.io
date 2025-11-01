@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e41414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #2c3e50;
+}
+p {
+    font-size: 18px;
+    color: #34495e;
+}
+ul {
+    list-style-type: square;
+}
+img {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}

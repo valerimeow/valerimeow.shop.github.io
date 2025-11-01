@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://chrome.installbrowser.ru/?utm_campaign=2_new|111613387&yclid=5839347423657852927">Мой Магазин</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск по название" id="searchInput">
+                        <button class="btn btn-outline-light" type="submit">Поиск</button>
+                    </form>
+                    <button class="btn btn-light ms-2" id="cartBtn">Корзина ( <span id="cartCount">0</span> )</button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.stopgame.ru/games/logos/13040/c1280x412/E_JA10Jd9oQS3xyveDBIEw/cry_of_fear-hero.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://lastfm.freetls.fastly.net/i/u/ar0/375f98986c617513e0f2146f374c8ea3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://avatars.mds.yandex.net/i?id=22de716ac3efef3cddeba76e2692bd89_l-4429593-images-thumbs&n=13" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4" id="catalog"> Наши товары</h2>
+
+        <div class="row mb-3">
+          <div class="col-mb-3">
+              <select class="form-seklect" id="priceFilter">
+                   <option value="">Все цены</option>
+                   <option value="0-500">До 500 руб.</option>
+                   <option value="500-1000">500-1000 руб.</option>
+                   <option value="1000+">Более 1000 руб.</option>
+              </select>
+          </div>
+        </div>
+        <div class="row" id="productGrid">
+            <div class="col-md-3 mb-4 showDetails">
+                <div class="card h-100 " style="width: 18rem;">
+                <img src="https://seeninthecity.co.uk/wp-content/uploads/2018/01/Lego_dublo_arto_alanenpaa_5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title " >Конструктор Lego</h5>
+                        <p class="card-text">1000 деталей для творчества. Цена: 1500 руб.</p>
+                        <button class="btn btn-primary w-100 addToCart" data-product="Конструктор" data-price="1500"> Добавить в корзину </button>
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-3 mb-4 showDetails">
+              <div class="card h-100 " style="width: 18rem;">
+              <img src="https://avatars.mds.yandex.net/get-mpic/12168282/2a0000019096f1ff20c91502f9f2cae58428/orig" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title " >Конструктор Lego</h5>
+                      <p class="card-text">500 деталей для творчества. Цена: 1000 руб.</p>
+                      <button class="btn btn-primary w-100 addToCart" data-product="Конструктор" data-price="1000"> Добавить в корзину </button>
+                  </div>
+          </div>
+          </div>
+
+          <div class="col-md-3 mb-4 showDetails">
+            <div class="card h-100 " style="width: 18rem;">
+            <img src="https://seeninthecity.co.uk/wp-content/uploads/2018/01/Lego_dublo_arto_alanenpaa_5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title " >Конструктор Lego</h5>
+                    <p class="card-text">100 деталей для творчества. Цена: 500 руб.</p>
+                    <button class="btn btn-primary w-100 addToCart" data-product="Конструктор" data-price="500"> Добавить в корзину </button>
+                </div>
+        </div>
+        </div>
+        <div class="col-md-3 mb-4 showDetails">
+          <div class="card h-100 " style="width: 18rem;">
+          <img src="https://avatars.mds.yandex.net/get-mpic/12168282/2a0000019096f1ff20c91502f9f2cae58428/orig" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title " >Конструктор Lego</h5>
+                  <p class="card-text">50 деталей для творчества. Цена: 100 руб.</p>
+                  <button class="btn btn-primary w-100 addToCart" data-product="Конструктор" data-price="100"> Добавить в корзину </button>
+              </div>
+      </div>
+      </div>
+        </div>
+        <div class="modal fade" id="productModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Детали товара</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body" id="modalBody">
+                <p>Здесь идет основной текст модального окна</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" id="buyBtn">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+   
+    document.querySelectorAll('.showDetails').forEach(title => {
+        title.addEventListener('click', function() {
+            const productName = this.textContent;
+            const price = this.parentElement.querySelector('button').dataset.price; 
+            document.getElementById('modalTitle').textContent = productName;
+            document.getElementById('modalBody').innerHTML = `Цена: ${price} руб. <br> Купил. Быстро.`;
+            
+            var myModal = new bootstrap.Modal(document.getElementById('productModal'));
+            myModal.show();
+        });
+    });
+
+    
+    document.getElementById('buyBtn').addEventListener('click', function() {
+        alert('Товар куплен! Спасибо!');
+    });
+
+document.getElementById('priceFilter').addEventListener('change',function(){
+  const filter = this.value;
+  const cards = document.querySelectorAll('#productGrid .card');
+  cards.forEach(card=>{
+    const price = parseInt(card.querySelector('button').dataset.price);
+    if (filter === ''){
+      card.parentElement.style.display = 'block';
+    }
+    else if (filter === '0-500' && price <= 500) {
+      card.parentElement.style.display ='block';
+    }
+    else if (filter === '500-1000' && price > 500 && price <=1000) {
+      card.parentElement.style.display = 'block';
+    }
+    else if (filter === '1000+' && price > 1000) {
+      card.parentElement.style.display = 'block';
+    }
+    else {
+      card.parentElement.style.display = 'none';
+    }
+  });
+
+});
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  document.getElementById('cartCount').textContent = cart.length;
+
+  document.querySelectorAll('.addToCart').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const product = this.dataset.product;
+    const price = parseInt(this.dataset.price);
+    cart.push({product, price});
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cartCount').textContent = cart.length;
+    alert(` ${product} добавлен в корзину!`); 
+
+  })
+})
+
+document.getElementById('cartBtn').addEventListener('click', function(){
+  if (cart.length === 0){
+    alert('корзина пустая!');
+  } else{
+    let total = cart.reduce((sum, item) => sum + item.price, 0);
+    alert(`В корзине: ${cart.map( item => item.product).join(', ')} \nИтого: ${total} руб.`)
+  }
+})  
+
+   
+</script>
+  </body>
+</html>

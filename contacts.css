@@ -1,0 +1,23 @@
+.contacts{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#774646, #776262);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 20px rgb(179, 169, 169);
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+main h1{
+    color: #c7bcbc;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.aboutme img{
+    width: 100px;
+    height: 100px;
+}
